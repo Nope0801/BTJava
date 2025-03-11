@@ -1,10 +1,8 @@
 package org.hina.LanguageBase.Sodoku;
 
-import lombok.Getter;
 
 public class FilterMap {
     private final RenderAnswer answer;
-    @Getter
     private final byte[][] aMap;
 
     public FilterMap() {
@@ -43,6 +41,10 @@ public class FilterMap {
 //        System.err.println("true");
         aMap[i0][j0] = x;
         return true;
+    }
+
+    public byte[][] getaMap() {
+        return aMap;
     }
 
     public void print (){

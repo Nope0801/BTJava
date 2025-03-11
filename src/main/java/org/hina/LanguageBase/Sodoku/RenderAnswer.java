@@ -1,8 +1,5 @@
 package org.hina.LanguageBase.Sodoku;
 
-import lombok.Getter;
-
-@Getter
 public class RenderAnswer {
     private final byte[][] ans;
 
@@ -13,5 +10,9 @@ public class RenderAnswer {
 
     public byte getBox (int i, int j){
         return ans[i][j];
+    }
+
+    public byte[][] getAns() {
+        return ans;
     }
 }
