@@ -2,6 +2,7 @@ package org.hina.LanguageBase.Sudoku.Map;
 
 
 import org.hina.LanguageBase.Sudoku.Exception.IllegalInputException;
+import org.hina.LanguageBase.Sudoku.Game.Moves;
 
 public class FilterMap implements Map {
     private final Map answer;
@@ -20,7 +21,26 @@ public class FilterMap implements Map {
         for (int i = 0; i < aMap.length; i++) {
             for (int j = 0; j < aMap.length; j++) {
                 double random = Math.random();
-                this.aMap[i][j] = (random > 0.05f) ? aMap[i][j] : 0;
+                this.aMap[i][j] = (random > 0.2f) ? aMap[i][j] : 0;
+            }
+        }
+    }
+
+    public void undo(Moves move) {
+        aMap[move.i()][move.j()] = 0;
+    }
+
+    public void redo(Moves move) {
+        aMap[move.i()][move.j()] = move.x();
+    }
+
+    public void hint() {
+        for (int i = 0; i < aMap.length; i++) {
+            for (int j = 0; j < aMap.length; j++) {
+                if (aMap[i][j] == 0) {
+                    System.out.println(new Moves(i, j, answer.getBox(i, j)));
+                    return;
+                }
             }
         }
     }

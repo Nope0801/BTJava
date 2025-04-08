@@ -4,11 +4,10 @@ import org.hina.LanguageBase.Sudoku.Controller.PlayerInput;
 import org.hina.LanguageBase.Sudoku.Exception.ExceptionHandler;
 
 public class GameManager {
-    ExceptionHandler exceptionHandler = new ExceptionHandler();
+    ExceptionHandler exceptionHandler;
 
     public GameManager() {
         exceptionHandler = new ExceptionHandler();
-
         play();
     }
 
@@ -19,9 +18,8 @@ public class GameManager {
 
         while (isPlaying) {
             print(game);
-
             try {
-                inputUpdate(input);
+                input(input, game);
             } catch (Exception e) {
                 exceptionHandler.handle(e);
             }
@@ -35,8 +33,17 @@ public class GameManager {
         input.close();
     }
 
-    private void inputUpdate(PlayerInput input) {
-        input.fill();
+    private void input(PlayerInput input, Game game) {
+        if (input.fillOrAction() == 1) {
+            input.fill();
+        } else {
+            int code = input.code();
+            switch (code) {
+                case 1 -> game.undo();
+                case 2 -> game.redo();
+                case 3 -> game.hint();
+            }
+        }
     }
 
     private void print(Game game) {

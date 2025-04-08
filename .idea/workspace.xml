@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="622b8e6b-6cea-4bbe-a9e0-53665a2d5694" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/FilterMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/FilterMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/RandomMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/RenderAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Controller/PlayerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Controller/PlayerInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/FilterMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/FilterMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
