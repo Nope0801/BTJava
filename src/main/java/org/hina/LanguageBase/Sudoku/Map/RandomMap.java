@@ -1,12 +1,13 @@
-package org.hina.LanguageBase.Sodoku;
+package org.hina.LanguageBase.Sudoku.Map;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Maps {
-    private final List<byte[][]> ls = new ArrayList<>();
+public class RandomMap implements Map {
+    private final byte[][] randomMap;
 
-    public Maps() {
+    public RandomMap() {
+        List<byte[][]> ls = new ArrayList<>();
         ls.add(new byte[][]{
                 {1, 2, 3, 4, 5, 6, 7, 8, 9},
                 {7, 8, 9, 1, 2, 3, 4, 5, 6},
@@ -42,45 +43,50 @@ public class Maps {
                 {9, 2, 5, 7, 6, 3, 4, 8, 1},
                 {7, 8, 3, 1, 4, 9, 2, 6, 5}
         });
-    }
 
-    public byte[][] getRandom() {
         int random = (int) (Math.random() * ls.size());
 
-        byte[][] temp = new byte[9][9];
-        for (int i = 0; i < temp.length; i++) {
-            System.arraycopy(ls.get(random)[i], 0, temp[i], 0, temp.length);
+        randomMap = new byte[9][9];
+        for (int i = 0; i < randomMap.length; i++) {
+            System.arraycopy(ls.get(random)[i], 0, randomMap[i], 0, randomMap.length);
         }
 
-        if (Math.random() > 0.5){
-            byte[] row0 = temp[0].clone();
-            byte[] row1 = temp[1].clone();
-            byte[] row2 = temp[2].clone();
+        if (Math.random() > 0.5) {
+            byte[] row0 = randomMap[0].clone();
+            byte[] row1 = randomMap[1].clone();
+            byte[] row2 = randomMap[2].clone();
 
-            temp[0] = temp[3].clone();
-            temp[1] = temp[4].clone();
-            temp[2] = temp[5].clone();
+            randomMap[0] = randomMap[3].clone();
+            randomMap[1] = randomMap[4].clone();
+            randomMap[2] = randomMap[5].clone();
 
-            temp[3] = row0;
-            temp[4] = row1;
-            temp[5] = row2;
+            randomMap[3] = row0;
+            randomMap[4] = row1;
+            randomMap[5] = row2;
         }
 
-        if (Math.random() > 0.5){
-            byte[] row0 = temp[0].clone();
-            byte[] row1 = temp[1].clone();
-            byte[] row2 = temp[2].clone();
+        if (Math.random() > 0.5) {
+            byte[] row0 = randomMap[0].clone();
+            byte[] row1 = randomMap[1].clone();
+            byte[] row2 = randomMap[2].clone();
 
-            temp[0] = temp[6].clone();
-            temp[1] = temp[7].clone();
-            temp[2] = temp[8].clone();
+            randomMap[0] = randomMap[6].clone();
+            randomMap[1] = randomMap[7].clone();
+            randomMap[2] = randomMap[8].clone();
 
-            temp[6] = row0;
-            temp[7] = row1;
-            temp[8] = row2;
+            randomMap[6] = row0;
+            randomMap[7] = row1;
+            randomMap[8] = row2;
         }
+    }
 
+    @Override
+    public byte[][] getMap() {
+        return randomMap;
+    }
 
-        return temp;
+    @Override
+    public byte getBox(int i, int j) {
+        return randomMap[i][j];
     }
 }

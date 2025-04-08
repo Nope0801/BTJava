@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="622b8e6b-6cea-4bbe-a9e0-53665a2d5694" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex1/fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex1/fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex1/fractionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex1/fractionList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex1/mainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex1/mainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Circle2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Circle2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/IShapeO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/IShapeO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/IShapeT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/IShapeT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Line2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Line2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Point2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Rectangle2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Rectangle2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Square2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Square2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Triangle2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/Paint2D/Triangle2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/mainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/w06/Ex3/mainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/FilterMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/FilterMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/RandomMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sodoku/RenderAnswer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,6 +72,26 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\nguye\code\java\JavaAssignments\src\main\java\org\hina\LanguageBase\Paint" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.hina.LanguageBase.Sudoku.Main" />
+      <module name="JavaAssignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hina.LanguageBase.Sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
