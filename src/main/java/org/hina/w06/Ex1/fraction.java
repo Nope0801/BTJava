@@ -69,13 +69,9 @@ public class fraction implements Comparable<fraction> {
         if (o == null) {
             return -1;
         }
-        double compare = this.ts / this.ms - o.ts / o.ms;
-        if (compare < 0) {
-            return -1;
-        } else if (compare > 0) {
-            return 1;
-        }
-        return (int) compare;
+        int a1 = ts * o.ms;
+        int a2 = ms * o.ts;
+        return a1 - a2;
     }
 
     public fraction plus(fraction frac) {

@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class fractionList {
 
-    private List<fraction> fracsList;
+    private final List<fraction> fracsList;
 
     public fractionList() {
         fracsList = new ArrayList<>();
@@ -57,4 +57,11 @@ public class fractionList {
         return cnt;
     }
 
+    public void sort() {
+        fracsList.sort(null);
+    }
+
+    public List<fraction> getFracsList() {
+        return fracsList;
+    }
 }

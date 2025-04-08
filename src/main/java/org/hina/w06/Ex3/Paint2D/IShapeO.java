@@ -1,7 +1,9 @@
 package org.hina.w06.Ex3.Paint2D;
 
 public interface IShapeO {
-    public double area();
-    public double perimeter();
-    public double distance();
+    double area();
+
+    double perimeter();
+
+    double distance();
 }

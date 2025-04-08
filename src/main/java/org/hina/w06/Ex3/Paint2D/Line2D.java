@@ -1,6 +1,6 @@
 package org.hina.w06.Ex3.Paint2D;
 
-public class Line2D implements IShapeO, IShapeT {
+public class Line2D implements IShape {
 
     private Point2D c1, c2;
 
@@ -38,14 +38,12 @@ public class Line2D implements IShapeO, IShapeT {
 
     @Override
     public double perimeter() {
-        return Math.sqrt(Math.pow(c2.getX() - c1.getX(), 2) + Math.pow(c2.getY() - c1.getY(), 2));
+        return distance();
     }
 
     @Override
     public double distance() {
-        double dx = c2.getX() - c1.getX();
-        double dy = c2.getY() - c1.getY();
-        return Math.sqrt(dx * dx + dy * dy);
+        return this.c1.distance(c2);
     }
 
     @Override
@@ -56,12 +54,28 @@ public class Line2D implements IShapeO, IShapeT {
 
     @Override
     public void rotate(double alpha) {
-        return;
+        IShape c = this.getCenter();
+        c1.rotate((Point2D) c, alpha);
+        c2.rotate((Point2D) c, alpha);
     }
 
     @Override
     public void zoom(double ratio) {
-        c2.setX(c1.getX() + ratio * (c2.getX() - c1.getX()));
-        c2.setY(c1.getY() + ratio * (c2.getY() - c1.getY()));
+        IShape c = getCenter();
+        this.c1.zoom((Point2D) c, ratio);
+        this.c2.zoom((Point2D) c, ratio);
+    }
+
+    @Override
+    public IShape getCenter() {
+        double dx = (c1.getX() + c2.getX()) / 2;
+        double dy = (c1.getY() + c2.getY()) / 2;
+
+        return new Point2D(dx, dy);
+    }
+
+    @Override
+    public IShape getBoundary() {
+        return this;
     }
 }

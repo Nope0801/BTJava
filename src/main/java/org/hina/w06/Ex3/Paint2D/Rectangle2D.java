@@ -1,14 +1,29 @@
 package org.hina.w06.Ex3.Paint2D;
 
-public class Rectangle2D implements IShapeO, IShapeT {
+public class Rectangle2D implements IShape {
 
-    private Point2D c;
-    private double a, b;
+    private Point2D a, b, c, d;
 
-    public Rectangle2D(Point2D c, double a, double b) {
-        super();
-        this.c = c;
+    public Rectangle2D(Point2D a, Point2D b, Point2D c, Point2D d) {
         this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+    }
+
+    public Point2D getA() {
+        return a;
+    }
+
+    public void setA(Point2D a) {
+        this.a = a;
+    }
+
+    public Point2D getB() {
+        return b;
+    }
+
+    public void setB(Point2D b) {
         this.b = b;
     }
 
@@ -20,20 +35,12 @@ public class Rectangle2D implements IShapeO, IShapeT {
         this.c = c;
     }
 
-    public double getA() {
-        return a;
+    public Point2D getD() {
+        return d;
     }
 
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public double getB() {
-        return b;
-    }
-
-    public void setB(double b) {
-        this.b = b;
+    public void setD(Point2D d) {
+        this.d = d;
     }
 
     @Override
@@ -43,17 +50,17 @@ public class Rectangle2D implements IShapeO, IShapeT {
 
     @Override
     public double area() {
-        return a * b;
+        return a.distance(b) * a.distance(d);
     }
 
     @Override
     public double perimeter() {
-        return (a + b) * 2;
+        return (a.distance(b) + a.distance(d)) * 2;
     }
 
     @Override
     public double distance() {
-        return this.c.distance();
+        return getCenter().distance();
     }
 
     @Override
@@ -63,12 +70,25 @@ public class Rectangle2D implements IShapeO, IShapeT {
 
     @Override
     public void rotate(double alpha) {
-        return;
+        IShape c = this.getCenter();
+        c.rotate(alpha);
     }
 
     @Override
     public void zoom(double ratio) {
-        this.a *= ratio;
-        this.b *= ratio;
+        a.zoom((Point2D) getCenter(), ratio);
+        b.zoom((Point2D) getCenter(), ratio);
+        c.zoom((Point2D) getCenter(), ratio);
+        d.zoom((Point2D) getCenter(), ratio);
+    }
+
+    @Override
+    public IShape getCenter() {
+        return new Line2D(a, c).getCenter();
+    }
+
+    @Override
+    public IShape getBoundary() {
+        return this;
     }
 }

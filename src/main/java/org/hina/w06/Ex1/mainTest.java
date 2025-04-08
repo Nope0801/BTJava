@@ -1,5 +1,10 @@
 package org.hina.w06.Ex1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class mainTest {
 
     public static void main(String[] arg) {
@@ -26,5 +31,8 @@ public class mainTest {
         System.out.println("Max: " + fracsList.getMax());
         System.out.println("Sum: " + fracsList.sum());
         System.out.println("The number of N: " + fracsList.soKhongPhaiPhanSoNguyen());
+
+        fracsList.sort();
+        fracsList.getFracsList().forEach(System.out::println);
     }
 }

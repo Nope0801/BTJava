@@ -1,21 +1,7 @@
 package org.hina.w06.Ex3.Paint2D;
 
-public class Square2D extends Rectangle2D{
-    public Square2D(Point2D c, double s) {
-        super(c, s, s);
-    }
-
-    public void setS (double s) {
-        super.setA(s);
-        super.setB(s);
-    }
-
-    public double getS() {
-        return super.getA();
-    }
-
-    @Override
-    public String toString() {
-        return "Square2D [c = " + getC() + ", side = " + getS() + "]";
+public class Square2D extends Rectangle2D {
+    public Square2D(Point2D a, Point2D c) {
+        super(a, new Point2D(c.getX(), a.getY()), c, new Point2D(a.getX(), c.getY()));
     }
 }

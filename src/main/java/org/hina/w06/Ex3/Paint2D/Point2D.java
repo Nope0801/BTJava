@@ -1,6 +1,6 @@
 package org.hina.w06.Ex3.Paint2D;
 
-public class Point2D implements IShapeO, IShapeT {
+public class Point2D implements IShape {
 
     private double x;
     private double y;
@@ -44,6 +44,10 @@ public class Point2D implements IShapeO, IShapeT {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
 
+    public double distance(Point2D point2D) {
+        return Math.hypot(x - point2D.x, y - point2D.y);
+    }
+
     public void move(double dx, double dy) {
         this.x += dx;
         this.y += dy;
@@ -55,5 +59,26 @@ public class Point2D implements IShapeO, IShapeT {
 
     public void zoom(double ratio) {
         return;
+    }
+
+    @Override
+    public IShape getCenter() {
+        return this;
+    }
+
+    @Override
+    public IShape getBoundary() {
+        return this;
+    }
+
+    public void rotate(Point2D c, double alpha) {
+
+    }
+
+    public void zoom(Point2D c, double ratio) {
+        double dx = this.x - c.x;
+        double dy = this.y - c.y;
+        this.x += c.x + dx * ratio;
+        this.y += c.y + dy * ratio;
     }
 }
