@@ -1,4 +1,4 @@
-package org.hina.LanguageBase.Sudoku.Exception;
+package org.hina.Sudoku.Exception;
 
 public class ExceptionHandler {
     public void handle(Exception e) {

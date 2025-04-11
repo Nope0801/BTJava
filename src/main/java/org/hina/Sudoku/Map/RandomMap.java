@@ -1,4 +1,4 @@
-package org.hina.LanguageBase.Sudoku.Map;
+package org.hina.Sudoku.Map;
 
 import java.util.ArrayList;
 import java.util.List;

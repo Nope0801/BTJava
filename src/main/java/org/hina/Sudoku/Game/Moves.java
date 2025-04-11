@@ -1,4 +1,4 @@
-package org.hina.LanguageBase.Sudoku.Game;
+package org.hina.Sudoku.Game;
 
 public record Moves(int i, int j, byte x) {
     @Override

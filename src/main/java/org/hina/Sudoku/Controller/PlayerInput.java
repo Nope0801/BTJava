@@ -1,7 +1,7 @@
-package org.hina.LanguageBase.Sudoku.Controller;
+package org.hina.Sudoku.Controller;
 
-import org.hina.LanguageBase.Sudoku.Exception.IllegalInputException;
-import org.hina.LanguageBase.Sudoku.Game.Game;
+import org.hina.Sudoku.Exception.IllegalInputException;
+import org.hina.Sudoku.Game.Game;
 
 import java.util.Scanner;
 

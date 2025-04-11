@@ -1,7 +1,7 @@
-package org.hina.LanguageBase.Sudoku.Game;
+package org.hina.Sudoku.Game;
 
-import org.hina.LanguageBase.Sudoku.Controller.PlayerInput;
-import org.hina.LanguageBase.Sudoku.Exception.ExceptionHandler;
+import org.hina.Sudoku.Controller.PlayerInput;
+import org.hina.Sudoku.Exception.ExceptionHandler;
 
 public class GameManager {
     ExceptionHandler exceptionHandler;

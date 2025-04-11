@@ -1,6 +1,6 @@
-package org.hina.LanguageBase.Sudoku.Game;
+package org.hina.Sudoku.Game;
 
-import org.hina.LanguageBase.Sudoku.Map.FilterMap;
+import org.hina.Sudoku.Map.FilterMap;
 
 import java.util.ArrayList;
 import java.util.List;

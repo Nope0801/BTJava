@@ -1,8 +1,8 @@
-package org.hina.LanguageBase.Sudoku.Map;
+package org.hina.Sudoku.Map;
 
 
-import org.hina.LanguageBase.Sudoku.Exception.IllegalInputException;
-import org.hina.LanguageBase.Sudoku.Game.Moves;
+import org.hina.Sudoku.Exception.IllegalInputException;
+import org.hina.Sudoku.Game.Moves;
 
 public class FilterMap implements Map {
     private final Map answer;

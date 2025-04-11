@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="622b8e6b-6cea-4bbe-a9e0-53665a2d5694" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Controller/PlayerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Controller/PlayerInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Exception/ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Exception/ExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Exception/IllegalInputException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Exception/IllegalInputException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Game/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Game/Moves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Game/Moves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/FilterMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Map/FilterMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Map/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/LanguageBase/Sudoku/Map/RandomMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Sudoku/Map/RandomMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +51,8 @@
     "Application.BatTheShip.executor": "Run",
     "Application.CountNumber.executor": "Run",
     "Application.Fibonacci.executor": "Run",
+    "Application.FileExample.executor": "Run",
+    "Application.FileReaderExample.executor": "Run",
     "Application.GiaiS.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Map.executor": "Run",
