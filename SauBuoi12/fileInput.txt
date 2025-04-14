@@ -1,0 +1,3 @@
+1, CNTT1, Nguyen Van Dat, 18, 7.5
+2, CNTT2, Bui Van Hoang, 19, 5.5
+3, CNTT3, Pham Minh Tu, 20, 10
